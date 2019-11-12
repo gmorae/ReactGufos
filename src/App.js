@@ -1,4 +1,5 @@
 import React from 'react';
+import Rodape from './components/Rodape'
 import './assets/css/flexbox.css';
 import './assets/css/reset.css';
 import './assets/css/style.css';
@@ -98,6 +99,7 @@ function App() {
           </div>
         </section>
       </main>
+      <Rodape />
     </div>
   );
 }
