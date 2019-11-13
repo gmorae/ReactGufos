@@ -1,28 +1,16 @@
 import React from 'react';
 import Rodape from './components/Rodape'
+import Navbar from './components/Navbar'
+
 import './assets/css/flexbox.css';
 import './assets/css/reset.css';
 import './assets/css/style.css';
-import './assets/css/cabecalho.css';
-import logo from './assets/img/icon-login.png'
 
 
 function App() {
   return (
     <div>
-      <header className="cabecalhoPrincipal">
-        <div className="container">
-          <img src={logo} alt="logo" />
-
-          <nav className="cabecalhoPrincipal-nav">
-            <a>Home</a>
-            <a>Eventos</a>
-            <a>Contato</a>
-            <a className="cabecalhoPrincipal-nav-login" href="login.html">Login</a>
-          </nav>
-        </div>
-      </header>
-
+      <Navbar />
       <section className="conteudoImagem">
         <div>
           <h1>Gufos</h1>

@@ -9,20 +9,20 @@ class Categoria extends Component {
     render(){
         return (
             <div>
-                <header class="cabecalhoPrincipal">
-                    <div class="container">
+                <header className="cabecalhoPrincipal">
+                    <div className="container">
                         <img src={logo} />
 
-                        <nav class="cabecalhoPrincipal-nav">
+                        <nav className="cabecalhoPrincipal-nav">
                             Administrador
                     </nav>
                     </div>
                 </header>
 
-                <main class="conteudoPrincipal">
-                    <section class="conteudoPrincipal-cadastro">
-                        <h1 class="conteudoPrincipal-cadastro-titulo">Categorias</h1>
-                        <div class="container" id="conteudoPrincipal-lista">
+                <main className="conteudoPrincipal">
+                    <section className="conteudoPrincipal-cadastro">
+                        <h1 className="conteudoPrincipal-cadastro-titulo">Categorias</h1>
+                        <div className="container" id="conteudoPrincipal-lista">
                             <table id="tabela-lista">
                                 <thead>
                                     <tr>
@@ -35,18 +35,18 @@ class Categoria extends Component {
                             </table>
                         </div>
 
-                        <div class="container" id="conteudoPrincipal-cadastro">
-                            <h2 class="conteudoPrincipal-cadastro-titulo">
+                        <div className="container" id="conteudoPrincipal-cadastro">
+                            <h2 className="conteudoPrincipal-cadastro-titulo">
                                 Cadastrar Tipo de Evento
                         </h2>
                             <form>
-                                <div class="container">
+                                <div className="container">
                                     <input
                                         type="text"
                                         id="nome-tipo-evento"
                                         placeholder="tipo do evento"
                                     />
-                                    <button class="conteudoPrincipal-btn conteudoPrincipal-btn-cadastro">
+                                    <button className="conteudoPrincipal-btn conteudoPrincipal-btn-cadastro">
                                         Cadastrar
                                 </button>
                                 </div>
