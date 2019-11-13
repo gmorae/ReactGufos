@@ -7,13 +7,15 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import NotFound from './pages/NotFound';
 import Categoria from './pages/Categoria'
+import Login from './pages/Login'
 
 const Rotas = (
     <Router>
         <div>
             <Switch>
                 <Route path="/" exact component={App} />
-                <Route path="/Categoria" exact component={Categoria} />
+                <Route path="/Categoria" component={Categoria} />
+                <Route path="/Login" component={Login} />
                 <Route component={NotFound} />
             </Switch>
         </div>
