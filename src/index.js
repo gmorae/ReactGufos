@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+import NotFound from './pages/NotFound';
 
 const Rotas = (
     <Router>
         <div>
-            <Route path="/" exact component={App} />
+            <Switch>
+                <Route path="/" exact component={App} />
+                <Route component={NotFound} />
+            </Switch>
         </div>
     </Router>
 )
